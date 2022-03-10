@@ -7280,7 +7280,7 @@ GameObject:
   - component: {fileID: 996814741}
   - component: {fileID: 996814740}
   m_Layer: 0
-  m_Name: arrowSign
+  m_Name: ArrowSign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
