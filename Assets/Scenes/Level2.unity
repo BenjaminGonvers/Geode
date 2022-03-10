@@ -3433,7 +3433,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< .merge_file_a06356
   m_RootOrder: 9
+=======
+  m_RootOrder: 3
+>>>>>>> .merge_file_a27108
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1389235572
 GameObject:
@@ -3657,6 +3661,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< .merge_file_a06356
 --- !u!1 &1897998418
 GameObject:
   m_ObjectHideFlags: 0
@@ -3779,6 +3784,9 @@ CircleCollider2D:
   serializedVersion: 2
   m_Radius: 0.5
 --- !u!1 &2037710177
+=======
+--- !u!1 &2111272517
+>>>>>>> .merge_file_a27108
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
