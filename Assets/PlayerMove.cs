@@ -20,7 +20,15 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-  
+        if (GetComponent<Rigidbody2D>().velocity.y <= 0.1f)
+        {
+            float newX = GetComponent<Rigidbody2D>().velocity.x - 1;
+            if (newX <= 1f)
+            {
+                newX = 0f;
+            }
+            GetComponent<Rigidbody2D>().velocity.Set(newX, 0f);
+        }
     }
 
     public void InAim(InputAction.CallbackContext context)
