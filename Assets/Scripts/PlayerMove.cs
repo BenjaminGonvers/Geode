@@ -47,4 +47,12 @@ public class PlayerMove : MonoBehaviour
             GetComponent<Rigidbody2D>().AddForce(impulseForce, ForceMode2D.Impulse);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Star"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
 }
