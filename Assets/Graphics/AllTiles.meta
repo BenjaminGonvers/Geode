@@ -1,7 +1,22 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Graphics/AllTiles.meta
 guid: cd57bda2eaee6854ca2846d9e1bcf365
 folderAsset: yes
 DefaultImporter:
+========
+<<<<<<< HEAD
+guid: 20cfdd17bc4095646bb92586d7a99533
+=======
+guid: 4af5192ee6967514e8a98723a2cf8625
+>>>>>>> d2d1811e8ad878149a35dead4750d47cb37495d6
+PrefabImporter:
+>>>>>>>> 993f1099a86e8fafa1fb630fbac42f7152d00049:Assets/Prefabs/Player.prefab.meta
+=======
+guid: e451c98f0432da3469ba12e0368f7379
+folderAsset: yes
+DefaultImporter:
+>>>>>>> 993f1099a86e8fafa1fb630fbac42f7152d00049
   externalObjects: {}
   userData: 
   assetBundleName: 
