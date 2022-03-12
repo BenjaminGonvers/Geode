@@ -23,6 +23,7 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
        
+
     }
 
     public void InAim(InputAction.CallbackContext context)
