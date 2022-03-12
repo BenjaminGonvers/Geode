@@ -24,7 +24,8 @@ public class TellToUI : MonoBehaviour
 
     public void AimingUI(InputAction.CallbackContext context)
     {
-        Vector2 posAim = context.ReadValue<Vector2>();
+        Vector2 posAim = context.ReadValue<Vector2>().normalized;
+        
 
         _arrowAim.transform.position = (this.transform.position + new Vector3(posAim.x *-1F, posAim.y*-1F, 0));
         
