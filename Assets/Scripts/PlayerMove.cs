@@ -7,11 +7,17 @@ using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
+    [SerializeField] private ChargingBar _chargingBar;
 
     [SerializeField]private float _maxForcePut;
 
+
     private Vector2 _posAim = new Vector2(0f, 0f);
     private Vector2 _normalizedAim = new Vector2(0f, 0f);
+
+    private bool _isCharging = false;
+    private float _charge = 0;
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +28,17 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        if (_isCharging && _charge < 100)
+        {
+            _charge += 100f * Time.deltaTime;
+
+            if (_charge > 100)
+            {
+                _charge = 100f;
+            }
+        }
+
+        _chargingBar.transform.localScale = new Vector3(_charge / 100, 1, 1);
 
     }
 
@@ -41,13 +57,37 @@ public class PlayerMove : MonoBehaviour
 
     public void LaunchGeode(InputAction.CallbackContext context)
     {
-        if (context.performed)
-        {
-            Vector2 impulseForce = _normalizedAim * _maxForcePut * -1f;
+        
 
-            GetComponent<Rigidbody2D>().AddForce(impulseForce, ForceMode2D.Impulse);
+        if (context.started)
+        {
+            _isCharging = true;
         }
+
+        if (context.canceled)
+        {
+            _isCharging = false;
+
+            if (_charge < 20f)
+            {
+                _charge = 20f;
+            }
+
+            Vector2 impulseForce = _normalizedAim * _maxForcePut * -1f * _charge / 100f;
+
+            PropulseGeode(impulseForce);
+
+            _charge = 0f;
+        }
+
     }
 
-    
+    private void PropulseGeode(Vector2 impulseForce)
+    {
+
+        GetComponent<Rigidbody2D>().AddForce(impulseForce, ForceMode2D.Impulse);
+    }
+
+
+
 }
