@@ -22275,6 +22275,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2435702839454250087, guid: cb8311a1f8dd7514195001942bec52db, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2435702839454250087, guid: cb8311a1f8dd7514195001942bec52db, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2435702839454250090, guid: cb8311a1f8dd7514195001942bec52db, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 2435702839454250090, guid: cb8311a1f8dd7514195001942bec52db, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.23
+      objectReference: {fileID: 0}
     - target: {fileID: 5271776483019782056, guid: cb8311a1f8dd7514195001942bec52db, type: 3}
       propertyPath: m_Name
       value: Player
@@ -22796,7 +22812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3482641816100137811, guid: 8601fcaf060fbde4996b651c1a0309a5, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3482641816100137811, guid: 8601fcaf060fbde4996b651c1a0309a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22869,7 +22885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3460004768436210852, guid: b7a130ac66896464ba2f6099292d27b5, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3460004768436210852, guid: b7a130ac66896464ba2f6099292d27b5, type: 3}
       propertyPath: m_LocalScale.x
