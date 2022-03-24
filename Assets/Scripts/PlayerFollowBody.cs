@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerCamera : MonoBehaviour
+public class PlayerFollowBody : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    [SerializeField] private Transform _playerBodyTransform;
+
+
     void Start()
     {
         
@@ -13,6 +16,9 @@ public class playerCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        transform.position = _playerBodyTransform.position;
+
     }
+
 }
