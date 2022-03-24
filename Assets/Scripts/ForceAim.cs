@@ -17,7 +17,7 @@ public class ForceAim : MonoBehaviour
     void Update()
     {
         //see if we need to display(if no direction from the player, we don't display the charging bar)
-        if (transform.localPosition.y == 0 && transform.localPosition.x == 0)
+        if (_playerTransform.GetComponent<Rigidbody2D>().velocity != Vector2.zero)
         {
             GetComponentInChildren<Renderer>().enabled = false;
             _chargingBar.GetComponent<Renderer>().enabled = false;
@@ -37,6 +37,9 @@ public class ForceAim : MonoBehaviour
 
         }
 
+        Vector3 newPos = _playerTransform.position;
+        newPos.z = 0.0f;
+        transform.LookAt(newPos);
     }
 
 }

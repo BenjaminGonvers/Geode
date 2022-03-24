@@ -7,10 +7,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
-    [SerializeField] private ChargingBar _chargingBar;
 
     [SerializeField]private float _maxForcePut;
-    [SerializeField] private float _maxForceDoubleJump;
 
 
     private Vector2 _posAim = new Vector2(0f, 0f);
@@ -19,7 +17,7 @@ public class PlayerMove : MonoBehaviour
     private bool _isCharging = false;
     private float _charge = 0;
 
-    private bool _alreadyDoubleJump = false;
+    
 
 
     // Start is called before the first frame update
@@ -41,9 +39,11 @@ public class PlayerMove : MonoBehaviour
             }
         }
 
-        _chargingBar.transform.localScale = new Vector3(_charge / 100, 1, 1);
 
-       
+        if (GetComponent<Rigidbody2D>().angularVelocity <= 10f && GetComponent<Rigidbody2D>().angularVelocity != 0f )
+        {
+            GetComponent<Rigidbody2D>().angularVelocity = 0f;
+        }
     }
 
     public void InAim(InputAction.CallbackContext context)
@@ -87,21 +87,12 @@ public class PlayerMove : MonoBehaviour
 
              _charge = 0f;
 
-             _alreadyDoubleJump = false;
+            
 
          }
         }
-        else
-        {
-            //if (!_alreadyDoubleJump && context.started)
-            //{
-            //    Vector2 impulseForce = _normalizedAim * _maxForceDoubleJump * -1f;
-            //    setVelocityGeode(impulseForce);
-            //    _alreadyDoubleJump = true;
-            //}
-        }
-
-}
+        
+    }
 
     private void PropulseGeode(Vector2 impulseForce)
     {
