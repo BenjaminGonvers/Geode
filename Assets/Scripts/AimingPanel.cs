@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class AimingPanel : MonoBehaviour
 {
     [Tooltip("The Transform of the player for the UI can follow him")]
     [SerializeField] private Transform _playerTransform;
-
+    [Tooltip("Target of the player for the UI can target them")]
     [SerializeField] private Transform _playerTarget;
+    [Tooltip("need the script of the player movement for knowing ")]
+    [SerializeField] private PlayerMove _playerMove;
 
+    [SerializeField] private List<Image> _uiList;
 
     private Camera _camera;
     private RectTransform _myRectTransform;
