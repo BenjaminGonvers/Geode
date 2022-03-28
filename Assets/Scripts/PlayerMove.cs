@@ -15,7 +15,7 @@ public class PlayerMove : MonoBehaviour
     private Vector2 _normalizedAim = new Vector2(0f, 0f);
 
     private bool _isCharging = false;
-    private float _charge = 0;
+    public float Charge = 0;
 
     
 
@@ -29,13 +29,13 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_isCharging && _charge < 100)
+        if (_isCharging && Charge < 100)
         {
-            _charge += 100f * Time.deltaTime;
+            Charge += 100f * Time.deltaTime;
 
-            if (_charge > 100)
+            if (Charge > 100)
             {
-                _charge = 100f;
+                Charge = 100f;
             }
         }
 
@@ -76,16 +76,16 @@ public class PlayerMove : MonoBehaviour
          {
              _isCharging = false;
 
-             if (_charge < 20f)
+             if (Charge < 20f)
              {
-                    _charge = 20f;
+                    Charge = 20f;
              }
 
-             Vector2 impulseForce = _normalizedAim * _maxForcePut * -1f * _charge / 100f;
+             Vector2 impulseForce = _normalizedAim * _maxForcePut * -1f * Charge / 100f;
 
              setVelocityGeode(impulseForce);
 
-             _charge = 0f;
+             Charge = 0f;
 
             
 
