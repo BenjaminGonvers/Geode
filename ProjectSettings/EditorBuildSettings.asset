@@ -9,12 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: e588b12bd7d673944b506f102038c119
   - enabled: 1
-    path: Assets/Scenes/Level3.unity
+    path: Assets/Scenes/Levels/GrassLevel1.unity
     guid: fdb1ecece63b2ba458611babff8d009b
   - enabled: 0
     path: Assets/Scenes/Level0.unity
     guid: d2cabbeb3ff156b42a64b699ece784b7
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
+    path: Assets/Scenes/Levels/IceLevel1.unity
     guid: 8b0798659aef57f4c966c58d6c72d3fd
   m_configObjects: {}
