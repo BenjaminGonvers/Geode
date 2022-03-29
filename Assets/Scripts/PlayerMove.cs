@@ -17,13 +17,13 @@ public class PlayerMove : MonoBehaviour
     private bool _isCharging = false;
     public float Charge = 0;
 
-    
 
+    private Rigidbody2D _myRigidbody2D;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        _myRigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -40,9 +40,9 @@ public class PlayerMove : MonoBehaviour
         }
 
 
-        if (GetComponent<Rigidbody2D>().angularVelocity <= 10f && GetComponent<Rigidbody2D>().angularVelocity != 0f )
+        if (_myRigidbody2D.angularVelocity <= 10f && _myRigidbody2D.angularVelocity != 0f )
         {
-            GetComponent<Rigidbody2D>().angularVelocity = 0f;
+           _myRigidbody2D.angularVelocity = 0f;
         }
     }
 
@@ -63,7 +63,7 @@ public class PlayerMove : MonoBehaviour
 
     public void LaunchGeode(InputAction.CallbackContext context)
     {
-        if (GetComponent<Rigidbody2D>().velocity == Vector2.zero)
+        if (_myRigidbody2D.velocity == Vector2.zero)
         {
 
 
@@ -83,7 +83,8 @@ public class PlayerMove : MonoBehaviour
 
              Vector2 impulseForce = _normalizedAim * _maxForcePut * -1f * Charge / 100f;
 
-             setVelocityGeode(impulseForce);
+             //SetVelocityGeode(impulseForce);
+             PropulseGeode(impulseForce);
 
              Charge = 0f;
 
@@ -97,12 +98,12 @@ public class PlayerMove : MonoBehaviour
     private void PropulseGeode(Vector2 impulseForce)
     {
 
-        GetComponent<Rigidbody2D>().AddForce(impulseForce, ForceMode2D.Impulse);
+        _myRigidbody2D.AddForce(impulseForce, ForceMode2D.Impulse);
     }
 
-    private void setVelocityGeode(Vector2 newVelocity)
+    private void SetVelocityGeode(Vector2 newVelocity)
     {
-        GetComponent<Rigidbody2D>().velocity = newVelocity;
+        _myRigidbody2D.velocity = newVelocity;
     }
 
 }
