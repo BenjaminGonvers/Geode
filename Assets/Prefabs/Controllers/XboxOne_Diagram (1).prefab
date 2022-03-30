@@ -190,7 +190,7 @@ Transform:
   m_GameObject: {fileID: 6711281505285439316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 150, y: 75, z: 0}
-  m_LocalScale: {x: 12, y: 12, z: 1}
+  m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children:
   - {fileID: 8101507921869378387}
   - {fileID: 7273582557686658345}
@@ -236,8 +236,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720730375
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 6cbb7f61dc2c42a4cae2176a1a4d4bf7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -257,6 +257,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6432069412371864721}
     m_Modifications:
+    - target: {fileID: 6052492964054565689, guid: 11b1f7f1719347f49ba9ab1377547755, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6052492965334857276, guid: 11b1f7f1719347f49ba9ab1377547755, type: 3}
       propertyPath: m_Name
       value: XboxOne_Left_Stick_Instructions
@@ -323,6 +327,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6432069412371864721}
     m_Modifications:
+    - target: {fileID: 7139409609467312502, guid: 6c883ca7c2c66a44190cd69a2c0e0330, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7139409610079977728, guid: 6c883ca7c2c66a44190cd69a2c0e0330, type: 3}
       propertyPath: m_SortingOrder
       value: 2
