@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3503902809866667793}
   - component: {fileID: 5288324483662869164}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: PS4_Diagram
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 650954847503341175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 150, y: 200, z: 0}
-  m_LocalScale: {x: 12, y: 12, z: 1}
+  m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children:
   - {fileID: 4949289450609692195}
   - {fileID: 6422866647496206297}
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720730375
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 185394c02f782ae4d8ac089c52f163dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -96,7 +96,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6422866647496206297}
   - component: {fileID: 4635352969236313142}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: PS4_Left_Stick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4949289450609692195}
   - component: {fileID: 2628984671189047450}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: PS4_Cross
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,6 +257,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3503902809866667793}
     m_Modifications:
+    - target: {fileID: 6452208654065462387, guid: a68772cf63e845d458a5647e9736a6ef, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6452208654286313022, guid: a68772cf63e845d458a5647e9736a6ef, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -307,7 +311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6452208654286313024, guid: a68772cf63e845d458a5647e9736a6ef, type: 3}
       propertyPath: m_Layer
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6452208654286313025, guid: a68772cf63e845d458a5647e9736a6ef, type: 3}
       propertyPath: m_SortingOrder
@@ -327,13 +331,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3503902809866667793}
     m_Modifications:
+    - target: {fileID: 3146078040101227535, guid: 1330ef77a64cff84c984fd37e1c1d156, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3146078040129512491, guid: 1330ef77a64cff84c984fd37e1c1d156, type: 3}
       propertyPath: m_Name
       value: PS4_Cross_Instructions
       objectReference: {fileID: 0}
     - target: {fileID: 3146078040129512491, guid: 1330ef77a64cff84c984fd37e1c1d156, type: 3}
       propertyPath: m_Layer
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3146078040129512916, guid: 1330ef77a64cff84c984fd37e1c1d156, type: 3}
       propertyPath: m_SortingOrder
