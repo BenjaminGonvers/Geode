@@ -37,13 +37,10 @@ public class PlayerMove : MonoBehaviour
             {
                 Charge = 100f;
             }
-        }
 
 
-        if (_myRigidbody2D.angularVelocity <= 10f && _myRigidbody2D.angularVelocity != 0f )
-        {
-           _myRigidbody2D.angularVelocity = 0f;
         }
+
     }
 
     public void InAim(InputAction.CallbackContext context)
