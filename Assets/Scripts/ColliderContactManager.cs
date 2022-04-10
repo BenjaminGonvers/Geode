@@ -21,6 +21,8 @@ public class ColliderContactManager : MonoBehaviour
         if (other.gameObject.CompareTag("Star"))
         {
             Destroy(other.gameObject);
+
+            FindObjectOfType<AudioManager>().Play("StarSound");
         }
     }
 }
