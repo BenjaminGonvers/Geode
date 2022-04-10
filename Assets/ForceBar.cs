@@ -4,29 +4,25 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class ChargingBar : MonoBehaviour
+public class ForceBar : MonoBehaviour
 {
 
-    [SerializeField] private PlayerMove _playerMove;
-
-    [SerializeField] Rigidbody2D _playerRigidbody2D;
+    [SerializeField] private Rigidbody2D _playerRigidbody2D;
 
     private bool _playerIsAiming;
-
     private Image _image;
     // Start is called before the first frame update
     void Start()
     {
         _image = GetComponent<Image>();
-    }
 
+    }
 
     // Update is called once per frame
     void Update()
     {
-        _image.fillAmount = _playerMove.Charge / 100;
 
-        if (_playerRigidbody2D.velocity == Vector2.zero && _playerIsAiming)
+        if (_playerRigidbody2D.velocity == Vector2.zero&&_playerIsAiming)
         {
             _image.enabled = true;
         }
@@ -34,7 +30,6 @@ public class ChargingBar : MonoBehaviour
         {
             _image.enabled = false;
         }
-
     }
 
     public void GetAimBar(InputAction.CallbackContext context)
@@ -48,8 +43,6 @@ public class ChargingBar : MonoBehaviour
         {
             _playerIsAiming = false;
         }
-       
-    }
 
-    
+    }
 }

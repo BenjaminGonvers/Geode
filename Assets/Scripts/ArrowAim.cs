@@ -3,32 +3,50 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class ArrowAim : MonoBehaviour
 {
 
-    private AimingPanel _geodeUiAimingPanel;
+    [SerializeField] private Rigidbody2D _playerRigidbody2D;
 
-    void Awake()
-    {
-        _geodeUiAimingPanel = GetComponentInParent<AimingPanel>();
-    }
+    private bool _playerIsAiming;
+    private Image _image;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        _image = GetComponent<Image>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-       
 
-        Vector3 posTarget = _geodeUiAimingPanel.transform.position;
-        posTarget.z = 0f;
-        transform.LookAt(posTarget);
+        if (_playerRigidbody2D.velocity == Vector2.zero && _playerIsAiming)
+        {
+            _image.enabled = true;
+        }
+        else
+        {
+            _image.enabled = false;
+        }
+    }
+
+    public void GetAimBar(InputAction.CallbackContext context)
+    {
+        Vector2 _posAim = context.ReadValue<Vector2>();
+        if (_posAim != Vector2.zero)
+        {
+            _playerIsAiming = true;
+        }
+        else
+        {
+            _playerIsAiming = false;
+        }
 
     }
 
