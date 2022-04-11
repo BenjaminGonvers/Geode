@@ -2,19 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/*public class PlayOnCollision : MonoBehaviour
-{
-    public AudioSource audioSource;
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.relativeVelocity.magnitude > 1)
-        {
-            Debug.Log("caca");
-            audioSource.Play();
-        }
-    }
-}*/
-
 public class PlayOnCollision : MonoBehaviour
 {
     public AudioSource audioSource;

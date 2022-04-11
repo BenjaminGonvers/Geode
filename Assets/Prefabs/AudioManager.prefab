@@ -56,3 +56,9 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: RockSound
+    clip: {fileID: 8300000, guid: 126dab304f28b6a4f86f9cd9dc4795ed, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

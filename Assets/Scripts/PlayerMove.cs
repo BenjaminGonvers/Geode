@@ -20,10 +20,17 @@ public class PlayerMove : MonoBehaviour
 
     private Rigidbody2D _myRigidbody2D;
 
+
+    /* for the respawn
+    private Vector3 respawnPoint;
+    public GameObject fallDetector;*/
+
     // Start is called before the first frame update
     void Start()
     {
         _myRigidbody2D = GetComponent<Rigidbody2D>();
+        /* for the respawn
+        respawnPoint = transform.position;*/
     }
 
     // Update is called once per frame
@@ -41,6 +48,8 @@ public class PlayerMove : MonoBehaviour
 
         }
 
+        /* for the respwan
+        fallDetector.transform.position = new Vector2(transform.position.x, fallDetector.transform.position.y);*/
     }
 
     public void InAim(InputAction.CallbackContext context)
@@ -92,10 +101,6 @@ public class PlayerMove : MonoBehaviour
     private void PropulseGeode(Vector2 impulseForce)
     {
         _myRigidbody2D.AddForce(impulseForce, ForceMode2D.Impulse);
-
-        /* son lancer Géode
-        var audioSource = GetComponent<AudioSource>();
-        audioSource.Play();*/
     }
 
     private void SetVelocityGeode(Vector2 newVelocity)
@@ -103,4 +108,12 @@ public class PlayerMove : MonoBehaviour
         _myRigidbody2D.velocity = newVelocity;
     }
 
+    /*for the respawn
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "FallDetector")
+        {
+            transform.position = respawnPoint;
+        }
+    }*/
 }
