@@ -84,9 +84,6 @@ public class PlayerMove : MonoBehaviour
              PropulseGeode(impulseForce);
 
              Charge = 0f;
-
-            
-
          }
         }
         
@@ -94,8 +91,11 @@ public class PlayerMove : MonoBehaviour
 
     private void PropulseGeode(Vector2 impulseForce)
     {
-
         _myRigidbody2D.AddForce(impulseForce, ForceMode2D.Impulse);
+
+        /* son lancer Géode
+        var audioSource = GetComponent<AudioSource>();
+        audioSource.Play();*/
     }
 
     private void SetVelocityGeode(Vector2 newVelocity)
