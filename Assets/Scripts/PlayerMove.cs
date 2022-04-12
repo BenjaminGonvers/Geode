@@ -7,7 +7,6 @@ using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
-
     [SerializeField]private float _maxForcePut;
 
 
