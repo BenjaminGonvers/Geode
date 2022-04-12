@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public string nextLevel = "GrassLevel1";
-    public int levelToUnlock = 2;
+    public int levelToUnlock = 5;
 
     public SceneFader sceneFader;
 
