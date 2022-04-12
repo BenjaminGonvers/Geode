@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/5-SandLevel1.unity
     guid: 064d53b1101c603448cb45c44fdd6403
+  - enabled: 1
+    path: Assets/Scenes/Menu/EndgameMenu.unity
+    guid: 6a042b06c3694254fb8d80faeb802667
   m_configObjects: {}
