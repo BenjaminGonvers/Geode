@@ -7,6 +7,11 @@ using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
+    //launchsound
+    public AudioClip impact;
+    AudioSource audioSource;
+
+
     [SerializeField]private float _maxForcePut;
 
 
@@ -30,6 +35,9 @@ public class PlayerMove : MonoBehaviour
         _myRigidbody2D = GetComponent<Rigidbody2D>();
         /* for the respawn
         respawnPoint = transform.position;*/
+
+        // launchsound
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -94,18 +102,22 @@ public class PlayerMove : MonoBehaviour
              Charge = 0f;
          }
         }
-        
+      
     }
 
     private void PropulseGeode(Vector2 impulseForce)
     {
         _myRigidbody2D.AddForce(impulseForce, ForceMode2D.Impulse);
+        // launchsound
+        audioSource.PlayOneShot(impact, 0.7F);
     }
 
     private void SetVelocityGeode(Vector2 newVelocity)
     {
         _myRigidbody2D.velocity = newVelocity;
     }
+
+ 
 
     /*for the respawn
     private void OnTriggerEnter2D(Collider2D collision)
