@@ -34924,21 +34924,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArrowSignToUpFromLeft
       objectReference: {fileID: 0}
-    - target: {fileID: 6260702591426855134, guid: db85ef15c9f979a4592c6bb0084458f7, type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 6260702591426855135, guid: db85ef15c9f979a4592c6bb0084458f7, type: 3}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6260702591426855135, guid: db85ef15c9f979a4592c6bb0084458f7, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.20000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 6260702591426855135, guid: db85ef15c9f979a4592c6bb0084458f7, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.20000002
       objectReference: {fileID: 0}
     - target: {fileID: 6260702591426855135, guid: db85ef15c9f979a4592c6bb0084458f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35276,6 +35264,10 @@ PrefabInstance:
     - target: {fileID: 2079701357695487110, guid: b7438832eadd79b40a931362307b1891, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079701357695487111, guid: b7438832eadd79b40a931362307b1891, type: 3}
+      propertyPath: Loop
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7438832eadd79b40a931362307b1891, type: 3}
@@ -40692,14 +40684,6 @@ PrefabInstance:
     - target: {fileID: 6260702591426855135, guid: abdba82af60a533488a936475e5f1bd3, type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6260702591426855135, guid: abdba82af60a533488a936475e5f1bd3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.20000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 6260702591426855135, guid: abdba82af60a533488a936475e5f1bd3, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.20000002
       objectReference: {fileID: 0}
     - target: {fileID: 6260702591426855135, guid: abdba82af60a533488a936475e5f1bd3, type: 3}
       propertyPath: m_LocalPosition.x
