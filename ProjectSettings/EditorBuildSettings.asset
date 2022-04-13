@@ -26,4 +26,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu/EndgameMenu.unity
     guid: 6a042b06c3694254fb8d80faeb802667
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 26b553c7c7c03704499e37a81ae2a483, type: 2}

@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 21798363}
+  - component: {fileID: 21798364}
   m_Layer: 0
   m_Name: Weeds
   m_TagString: Untagged
@@ -156,6 +157,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &21798364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21798362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aae5e3aeb2ab14ab91187e88fdb44d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Respawn: 0
 --- !u!1 &54020318
 GameObject:
   m_ObjectHideFlags: 0
@@ -34811,6 +34825,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicGrassLevel
       objectReference: {fileID: 0}
+    - target: {fileID: 5692384786749310922, guid: 1afefb2af9707494083b28b53a8aa6fc, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5692384786749310923, guid: 1afefb2af9707494083b28b53a8aa6fc, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -34867,6 +34885,14 @@ PrefabInstance:
     - target: {fileID: 6260702591426855129, guid: 7464799dd22719b41b613262c26bc40a, type: 3}
       propertyPath: m_Name
       value: ArrowSign (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260702591426855134, guid: 7464799dd22719b41b613262c26bc40a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260702591426855134, guid: 7464799dd22719b41b613262c26bc40a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1720730375
       objectReference: {fileID: 0}
     - target: {fileID: 6260702591426855135, guid: 7464799dd22719b41b613262c26bc40a, type: 3}
       propertyPath: m_RootOrder
@@ -35196,6 +35222,14 @@ PrefabInstance:
     - target: {fileID: 6260702591426855129, guid: abdba82af60a533488a936475e5f1bd3, type: 3}
       propertyPath: m_Name
       value: ArrowSignToDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260702591426855134, guid: abdba82af60a533488a936475e5f1bd3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260702591426855134, guid: abdba82af60a533488a936475e5f1bd3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1720730375
       objectReference: {fileID: 0}
     - target: {fileID: 6260702591426855135, guid: abdba82af60a533488a936475e5f1bd3, type: 3}
       propertyPath: m_RootOrder
@@ -35830,6 +35864,14 @@ PrefabInstance:
     - target: {fileID: 6260702591426855129, guid: 7464799dd22719b41b613262c26bc40a, type: 3}
       propertyPath: m_Name
       value: ArrowSign
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260702591426855134, guid: 7464799dd22719b41b613262c26bc40a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260702591426855134, guid: 7464799dd22719b41b613262c26bc40a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1720730375
       objectReference: {fileID: 0}
     - target: {fileID: 6260702591426855135, guid: 7464799dd22719b41b613262c26bc40a, type: 3}
       propertyPath: m_RootOrder
