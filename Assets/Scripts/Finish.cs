@@ -9,6 +9,8 @@ public class Finish : MonoBehaviour
 
     private bool levelCompleted = false;
 
+    [SerializeField] private ParticleSystem collectParticle = null;
+
     private void Start()
     {
         finishSound = GetComponent<AudioSource>();
@@ -21,7 +23,16 @@ public class Finish : MonoBehaviour
             finishSound.Play();
             levelCompleted = true;
             Invoke("CompleteLevel", 0.5f);
+            // play explosion
+            Collect();
         }
+    }
+
+    public void Collect()
+    {
+        // play the collect graphics
+        collectParticle.Play();
+        // play the collect sound effects
     }
 
     private void CompleteLevel()

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3412318186496476821}
   m_Layer: 0
   m_Name: Finish
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c4c8750d31fa1c44b49d11a11a9e880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectParticle: {fileID: 0}
 --- !u!82 &3412318186496476821
 AudioSource:
   m_ObjectHideFlags: 0
