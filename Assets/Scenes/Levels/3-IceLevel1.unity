@@ -35384,6 +35384,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 191121424, guid: 019863d3321fb534cabc13cefa1f30cb, type: 3}
+      propertyPath: _pauseGame
+      value: 
+      objectReference: {fileID: 2102325651}
+    - target: {fileID: 844873574, guid: 019863d3321fb534cabc13cefa1f30cb, type: 3}
+      propertyPath: _pauseGame
+      value: 
+      objectReference: {fileID: 2102325651}
+    - target: {fileID: 793126578844935813, guid: 019863d3321fb534cabc13cefa1f30cb, type: 3}
+      propertyPath: _pauseGame
+      value: 
+      objectReference: {fileID: 2102325651}
     - target: {fileID: 3023920873119056890, guid: 019863d3321fb534cabc13cefa1f30cb, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -35452,6 +35464,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -10
       objectReference: {fileID: 0}
+    - target: {fileID: 3710152117574527872, guid: 019863d3321fb534cabc13cefa1f30cb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2102325651}
+    - target: {fileID: 3710152117574527872, guid: 019863d3321fb534cabc13cefa1f30cb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GetButtonStart
+      objectReference: {fileID: 0}
     - target: {fileID: 3710152117574527873, guid: 019863d3321fb534cabc13cefa1f30cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.688
@@ -35484,6 +35504,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3710152119264162623, guid: 019863d3321fb534cabc13cefa1f30cb, type: 3}
+      propertyPath: _pauseGame
+      value: 
+      objectReference: {fileID: 2102325651}
     - target: {fileID: 8505758254568732356, guid: 019863d3321fb534cabc13cefa1f30cb, type: 3}
       propertyPath: m_Name
       value: PlayerUX
@@ -36913,6 +36937,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6bd4c2036246eb4d81191ee642f9069, type: 3}
+--- !u!114 &2102325651 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6208139194277644477, guid: d6bd4c2036246eb4d81191ee642f9069, type: 3}
+  m_PrefabInstance: {fileID: 2102325650}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6cd65cbc57cd34fb273c87f27c206b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2123841660
 PrefabInstance:
   m_ObjectHideFlags: 0

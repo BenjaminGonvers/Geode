@@ -588,9 +588,21 @@ MonoBehaviour:
     m_ActionId: 66d83699-bfde-481e-9cd5-64b6b992ea6e
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: GetButtonStart
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: fdfd88a5-9d9d-467b-bdfc-f4eb3bf1ade2
-    m_ActionName: Player/Start[/XInputControllerWindows/start,/Keyboard/escape]
+    m_ActionName: Player/Start[/DualShock4GamepadHID/start]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -686,6 +698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerRigidbody2D: {fileID: 3710152117436156400}
+  _pauseGame: {fileID: 0}
 --- !u!1 &3710152117636609102
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerRigidbody2D: {fileID: 3710152117436156400}
+  _pauseGame: {fileID: 0}
 --- !u!1 &3710152118002790594
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,6 +1272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerMove: {fileID: 3710152117436156401}
   _playerRigidbody2D: {fileID: 3710152117436156400}
+  _pauseGame: {fileID: 0}
 --- !u!1 &3710152119310431658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,6 +1405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerRigidbody2D: {fileID: 3710152117436156400}
+  _pauseGame: {fileID: 0}
 --- !u!1 &8505758254568732356
 GameObject:
   m_ObjectHideFlags: 0
