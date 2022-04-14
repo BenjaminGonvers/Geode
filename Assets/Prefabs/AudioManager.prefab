@@ -51,8 +51,8 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: Theme1
-    clip: {fileID: 8300000, guid: 8a3b5a5620063a74ba8384a8a7f41a9e, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: f4c3b2f2f59014e4c85233df9c12da65, type: 3}
+    volume: 0.2
     pitch: 1
     loop: 1
     source: {fileID: 0}
