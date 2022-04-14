@@ -5,12 +5,14 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     public bool isGamePaused = false;
 
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private Button firstButton;
 
     // Update is called once per frame
     void Update()
@@ -53,6 +55,7 @@ public class PauseMenu : MonoBehaviour
     void PauseGame()
     {
         pauseMenu.SetActive(true);
+        firstButton.Select();
         Time.timeScale = 0f;
         isGamePaused = true;
     }
@@ -68,5 +71,5 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
         Debug.Log("Quit");
     }
-  
+
 }
