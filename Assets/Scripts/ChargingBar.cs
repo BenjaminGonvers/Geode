@@ -10,6 +10,7 @@ public class ChargingBar : MonoBehaviour
     [SerializeField] private PlayerMove _playerMove;
 
     [SerializeField] Rigidbody2D _playerRigidbody2D;
+    [SerializeField]private PauseMenu _pauseGame;
 
     private bool _playerIsAiming;
 
@@ -26,7 +27,7 @@ public class ChargingBar : MonoBehaviour
     {
         _image.fillAmount = _playerMove.Charge / 100;
 
-        if (_playerRigidbody2D.velocity == Vector2.zero && _playerIsAiming)
+        if (_playerRigidbody2D.velocity == Vector2.zero && _playerIsAiming && !_pauseGame.isGamePaused)
         {
             _image.enabled = true;
         }

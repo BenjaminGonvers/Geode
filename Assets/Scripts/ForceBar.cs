@@ -8,6 +8,7 @@ public class ForceBar : MonoBehaviour
 {
 
     [SerializeField] private Rigidbody2D _playerRigidbody2D;
+    [SerializeField] private PauseMenu _pauseGame;
 
     private bool _playerIsAiming;
     private Image _image;
@@ -22,7 +23,7 @@ public class ForceBar : MonoBehaviour
     void Update()
     {
 
-        if (_playerRigidbody2D.velocity == Vector2.zero&&_playerIsAiming)
+        if (_playerRigidbody2D.velocity == Vector2.zero&&_playerIsAiming && !_pauseGame.isGamePaused)
         {
             _image.enabled = true;
         }
